@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/primary"
+            android:padding="24dp">
+
+            <ImageView android:id="@+id/iv_icon"
+                android:layout_width="56dp" android:layout_height="56dp" />
+
+            <LinearLayout
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView android:id="@+id/tv_app_name"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/text_on_primary" android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView android:id="@+id/tv_pkg"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" android:textColor="@color/text_on_primary_secondary"
+                    android:textSize="12sp" android:maxLines="1" android:ellipsize="middle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical">
+            <TextView android:id="@+id/tv_info"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="13sp" android:textColor="@color/text_secondary"
+                android:lineSpacingExtra="6dp" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <LinearLayout android:id="@+id/btn_strength" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="拦截强度"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+                <TextView android:id="@+id/tv_strength_value"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textColor="@color/primary" android:textSize="14sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp" android:text="›"
+                    android:textSize="22sp" android:textColor="@color/text_hint" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginStart="16dp" android:background="@color/divider" />
+
+            <LinearLayout android:id="@+id/btn_whitelist" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="加入白名单（不拦截）"
+                    android:textSize="16sp" android:textColor="@color/primary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="针对此应用的规则" android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <LinearLayout android:id="@+id/rule_container"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout android:id="@+id/btn_add_rule" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="＋ 新增规则"
+                    android:textSize="16sp" android:textColor="@color/primary" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="系统操作" android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <LinearLayout android:id="@+id/btn_sys_settings" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="打开系统应用信息页"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginStart="16dp" android:background="@color/divider" />
+
+            <LinearLayout android:id="@+id/btn_clear_data" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="清除应用数据"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginStart="16dp" android:background="@color/divider" />
+
+            <LinearLayout android:id="@+id/btn_uninstall" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="卸载此应用"
+                    android:textSize="16sp" android:textColor="@color/danger" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
