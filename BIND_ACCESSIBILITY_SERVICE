@@ -1,0 +1,10 @@
+声明：
+<service
+    android:name=".AdBlockService"
+    android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+用途：绑定无障碍服务，读取屏幕视图节点，识别广告按钮。
+
+授权方式：用户需手动在"系统设置 → 无障碍 → 广告拦截助手"中开启。
+
+用户可随时关闭：在系统设置里关闭开关，App 立即停止工作。
+
