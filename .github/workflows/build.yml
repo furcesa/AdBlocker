@@ -24,23 +24,32 @@ jobs:
         with:
           gradle-version: 8.2
 
-      - name: 缓存 Gradle
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
+      - name: 检查文件结构（重要）
+        run: |
+          echo "===== 根目录 ====="
+          ls -la
+          echo "===== app/ ====="
+          ls -la app/ 2>/dev/null || echo "❌ app/ 不存在"
+          echo "===== app/src/main/ ====="
+          ls -la app/src/main/ 2>/dev/null || echo "❌ app/src/main/ 不存在"
+          echo "===== app/src/main/res/ ====="
+          ls -la app/src/main/res/ 2>/dev/null || echo "❌ res/ 不存在"
+          echo "===== app/src/main/res/values/ ====="
+          ls -la app/src/main/res/values/ 2>/dev/null || echo "❌ values/ 不存在"
+          echo "===== app/src/main/res/xml/ ====="
+          ls -la app/src/main/res/xml/ 2>/dev/null || echo "❌ xml/ 不存在"
+          echo "===== app/src/main/res/layout/ ====="
+          ls -la app/src/main/res/layout/ 2>/dev/null || echo "❌ layout/ 不存在"
+          echo "===== app/src/main/res/drawable/ ====="
+          ls -la app/src/main/res/drawable/ 2>/dev/null || echo "❌ drawable/ 不存在"
+          echo "===== Java 文件 ====="
+          find app/src/main/java -type f 2>/dev/null || echo "❌ Java 目录不存在"
 
       - name: 创建 local.properties
         run: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
 
       - name: 构建 Debug APK
         run: gradle assembleDebug --no-daemon --stacktrace
-        env:
-          GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx2048m -Dorg.gradle.daemon=false"
 
       - name: 上传 APK
         uses: actions/upload-artifact@v4
