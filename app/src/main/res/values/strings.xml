@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广告拦截助手</string>
+    <string name="service_label">广告拦截助手</string>
+    <string name="accessibility_summary">自动识别并关闭应用内的广告弹窗</string>
+    <string name="accessibility_description">开启后，本服务会读取屏幕上的视图节点，识别"跳过""关闭"等按钮并自动点击，同时可秒退摇一摇广告页、识别流氓软件、阻止自动安装。所有数据均在本地处理，不会上传。</string>
+</resources>
