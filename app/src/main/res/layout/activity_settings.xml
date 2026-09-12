@@ -74,4 +74,55 @@
                     android:textSize="16sp" android:textColor="@color/text_primary" />
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="›" android:textSize="22sp" android:textColor="@color/text_hint" />
-           
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginStart="16dp" android:background="@color/divider" />
+
+            <LinearLayout android:id="@+id/row_logs" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="可疑节点日志"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textSize="22sp" android:textColor="@color/text_hint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="应用" android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <LinearLayout android:id="@+id/row_apps" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="应用列表与白名单"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textSize="22sp" android:textColor="@color/text_hint" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="其他" android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <LinearLayout android:id="@+id/row_about" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="关于"
+                    android:textSize="16sp" android:textColor="@color/text_primary" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textSize="22sp" android:textColor="@color/text_hint" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginStart="16dp" android:background="@color/divider" />
+
+            <LinearLayout android:id="@+id/row_reset" style="@style/RowStyle">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="清空所有数据"
+                    android:textSize="16sp" android:textColor="@color/danger" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
