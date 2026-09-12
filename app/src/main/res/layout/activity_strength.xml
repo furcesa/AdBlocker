@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:padding="24dp"
+            android:text="拦截强度"
+            android:textColor="@color/text_on_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="档位" android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="8dp">
+            <RadioGroup android:id="@+id/rg_level"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/rb_normal"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="普通 · 仅关键词，最稳"
+                    android:textSize="15sp" android:textColor="@color/text_primary" />
+
+                <RadioButton android:id="@+id/rb_medium"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="中等 · 关键词 + ID + 秒退"
+                    android:textSize="15sp" android:textColor="@color/text_primary" />
+
+                <RadioButton android:id="@+id/rb_strong"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="强力 · 全部开启，拦截率高"
+                    android:textSize="15sp" android:textColor="@color/text_primary" />
+
+                <RadioButton android:id="@+id/rb_custom"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:text="自定义 · 逐项开关"
+                    android:textSize="15sp" android:textColor="@color/text_primary" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="28dp" android:layout_marginTop="20dp"
+            android:text="细分开关" android:textColor="@color/text_secondary" android:textSize="12sp" />
+
+        <LinearLayout style="@style/CardStyle" android:orientation="vertical" android:padding="0dp">
+            <Switch android:id="@+id/sw_keyword"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="关键词匹配" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_view_id"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="控件ID匹配" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_coordinate"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="坐标兜底点击" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_ad_activity"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="秒退广告 Activity" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_rogue"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="流氓软件识别" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_install"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="阻止自动安装" android:textSize="15sp" android:textColor="@color/text_primary" />
+
+            <Switch android:id="@+id/sw_shake"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp" android:paddingVertical="10dp"
+                android:text="摇一摇广告识别" android:textSize="15sp" android:textColor="@color/text_primary" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
