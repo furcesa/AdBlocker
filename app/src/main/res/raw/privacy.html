@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策</title>
+<style>
+body{font-family:-apple-system,"PingFang SC",sans-serif;line-height:1.8;color:#1F1F1F;background:#F5F6F8;padding:16px;margin:0;font-size:15px;}
+h1{font-size:20px;color:#1A73E8;border-bottom:2px solid #1A73E8;padding-bottom:8px;}
+h2{font-size:17px;margin-top:24px;}
+ul{padding-left:20px;}
+li{margin:6px 0;}
+code{background:#EEEEEE;padding:2px 6px;border-radius:4px;font-size:13px;}
+strong{color:#D32F2F;}
+.note{background:#E8F0FE;border-left:4px solid #1A73E8;padding:12px;border-radius:4px;margin:16px 0;}
+@media (prefers-color-scheme: dark){
+  body{background:#121212;color:#ECECEC;}
+  h1{color:#5C9DFF;border-color:#5C9DFF;}
+  code{background:#2A2A2A;}
+  strong{color:#EF5350;}
+  .note{background:#1A2A40;border-color:#5C9DFF;}
+}
+</style>
+</head>
+<body>
+
+<h1>隐私政策</h1>
+<p><strong>生效日期：</strong>2026-01-01<br>
+<strong>适用版本：</strong>广告拦截助手 1.0 及以上</p>
+
+<div class="note">
+<strong>核心承诺：</strong>本应用<strong>不联网、不上传、不收集任何用户数据</strong>。
+</div>
+
+<h2>一、我们不收集的信息</h2>
+<p>本应用<strong>完全不会</strong>收集、存储或上传以下信息：</p>
+<ul>
+<li>❌ 设备标识符（IMEI、Android ID、MAC 地址）</li>
+<li>❌ 位置信息（GPS、网络定位）</li>
+<li>❌ 通讯录、短信、通话记录</li>
+<li>❌ 相册、文件、媒体内容</li>
+<li>❌ 账号、密码、支付信息</li>
+<li>❌ 应用使用习惯、点击行为</li>
+<li>❌ 崩溃日志、性能数据</li>
+</ul>
+
+<h2>二、无障碍服务权限说明</h2>
+<p>本应用使用 Android 无障碍服务实现广告识别与拦截。</p>
+
+<p><strong>读取的内容：</strong></p>
+<ul>
+<li>屏幕上当前窗口的视图节点（文字、控件ID、类名、位置）</li>
+</ul>
+
+<p><strong>用途：</strong></p>
+<ul>
+<li>识别广告弹窗中的"跳过""关闭"等按钮</li>
+<li>判断当前页面是否为广告页</li>
+<li>检测安装界面以阻止自动安装</li>
+</ul>
+
+<p><strong>数据处理方式：</strong></p>
+<ul>
+<li>所有屏幕内容<strong>仅在设备内存中处理</strong>，不写入磁盘</li>
+<li>处理完成后立即丢弃，<strong>不保存、不传输</strong></li>
+<li>不上传到任何服务器</li>
+</ul>
+
+<div class="note">
+<strong>例外：</strong>用户主动点击"生成规则"时，会把某个节点的文字/ID保存到本地规则库。这是用户明确的操作，数据仅在本地。
+</div>
+
+<h2>三、其他权限说明</h2>
+<table border="1" cellpadding="8" cellspacing="0" style="width:100%;border-collapse:collapse;font-size:14px;">
+<tr style="background:#E8F0FE;"><th>权限</th><th>用途</th><th>是否必须</th></tr>
+<tr><td><code>QUERY_ALL_PACKAGES</code></td><td>读取已安装应用列表</td><td>是（Android 11+）</td></tr>
+<tr><td><code>BIND_ACCESSIBILITY_SERVICE</code></td><td>无障碍服务绑定</td><td>是</td></tr>
+</table>
+
+<h2>四、数据的本地存储</h2>
+<p>以下数据保存在手机本地 SharedPreferences，<strong>不联网、不上传</strong>：</p>
+<ul>
+<li>广告识别规则（用户添加）</li>
+<li>应用白名单（用户勾选）</li>
+<li>应用级强度配置（用户设置）</li>
+<li>强度档位（用户选择）</li>
+<li>可疑节点日志（自动记录，最多 200 条）</li>
+</ul>
+<p>用户可在"设置 → 清空所有数据"中一键删除全部本地数据。</p>
+
+<h2>五、第三方组件</h2>
+<p>本应用使用以下开源组件，它们<strong>均不包含任何数据收集代码</strong>：</p>
+<ul>
+<li>AndroidX AppCompat (Apache-2.0)</li>
+<li>AndroidX RecyclerView (Apache-2.0)</li>
+<li>AndroidX Core (Apache-2.0)</li>
+</ul>
+
+<h2>六、儿童隐私</h2>
+<p>本应用不针对儿童，不收集任何个人信息。</p>
+
+<h2>七、政策变更</h2>
+<p>若未来版本修改隐私政策，会在更新日志中明确说明。重大变更会在首次启动时弹窗提示。</p>
+
+<h2>八、联系方式</h2>
+<p>邮箱：ych0804301231@outlook.com</p>
+
+<hr>
+<p style="text-align:center;color:#888;font-size:13px;">
+简而言之：<strong>这个 App 不联网，你手机上发生的任何事，都不会离开你的手机。</strong>
+</p>
+
+</body>
+</html>
