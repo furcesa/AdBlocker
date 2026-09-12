@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>更新日志</title>
+<style>
+body{font-family:-apple-system,"PingFang SC",sans-serif;line-height:1.8;color:#1F1F1F;background:#F5F6F8;padding:16px;margin:0;font-size:15px;}
+h1{font-size:20px;color:#1A73E8;border-bottom:2px solid #1A73E8;padding-bottom:8px;}
+h2{font-size:17px;margin-top:24px;color:#1A73E8;}
+h3{font-size:15px;margin-top:16px;}
+ul{padding-left:20px;}
+li{margin:6px 0;}
+.ver{background:#E8F0FE;padding:4px 10px;border-radius:6px;display:inline-block;font-weight:bold;color:#1A73E8;}
+.date{color:#888;font-size:13px;margin-left:8px;}
+@media (prefers-color-scheme: dark){
+  body{background:#121212;color:#ECECEC;}
+  h1,h2{color:#5C9DFF;border-color:#5C9DFF;}
+  .ver{background:#1A2A40;color:#5C9DFF;}
+}
+</style>
+</head>
+<body>
+
+<h1>更新日志</h1>
+
+<h2><span class="ver">v1.0.0</span><span class="date">2026-01-01</span></h2>
+
+<h3>新增</h3>
+<ul>
+<li>基于无障碍服务的广告自动拦截</li>
+<li>关键词 / 控件ID / 坐标三级匹配</li>
+<li>秒退广告 Activity（摇一摇核心）</li>
+<li>摇一摇 WebView 特征识别</li>
+<li>阻止自动安装</li>
+<li>规则库（增删改 + 导入导出）</li>
+<li>四档拦截强度（普通/中等/强力/自定义）</li>
+<li>应用级强度覆盖</li>
+<li>应用级自定义开关</li>
+<li>应用列表（搜索 + 系统应用过滤）</li>
+<li>应用白名单</li>
+<li>应用详情页</li>
+<li>可疑节点日志 + 一键生成规则</li>
+<li>流氓软件识别</li>
+<li>深色模式（Android 10+）</li>
+<li>设置页 + 关于页</li>
+<li>内置隐私政策 / 权限说明 / 使用指南 / 兼容性测试清单</li>
+</ul>
+
+<h3>支持</h3>
+<ul>
+<li>Android 7.0 (API 24) 至 Android 14 (API 34)</li>
+<li>简体中文界面</li>
+</ul>
+
+<h3>已知限制</h3>
+<ul>
+<li>Android 7~9 不支持深色模式</li>
+<li>部分 ROM 不返回 viewId，需依赖关键词</li>
+<li>低端机上秒退成功率较低</li>
+</ul>
+
+</body>
+</html>
